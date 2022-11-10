@@ -1,12 +1,17 @@
 .hero{
     padding-top:var(--spacing-lg);
+    background-color: var(--color-secondary);
 
-
-
-    .wrapper{
+    .wrapperHero{
         display:flex;
         justify-content: space-between;
-        background-color: var(--color-secondary);
+
+            max-width: $breakpoint-lg;
+            width: calc(100% - var(--spacing-md));
+            margin: 0 auto;
+
+
+
     }
 
     .hero-content{
@@ -21,20 +26,40 @@
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
+        img{
+            height: 673px;
+            width: 1200px;
+
+
+        }
     }
+
 
     h1{
         text-transform: uppercase;
-        font-family: "Times New Roman", serif;
+        font-family: 'Sarabun', sans-serif;
+        font-weight: bolder;
     }
 
+    .wrapperHero p{
+        font-family: "Montserrat", serif;
+        font-weight: 600;
+
+
+    }
     .suptitle{
         font-weight:bold;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 20px;
     }
+
+
+
 
     .bouton-hero{
         width:50%;
-        padding:20px 30px;
+        padding: 13px;
+        font-family: "Montserrat", serif;
     }
 }
 
