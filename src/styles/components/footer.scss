@@ -1,7 +1,6 @@
 .pieddepage{
-    padding:var(--spacing-lg) 0;
+    padding:var(--spacing-sm) 0;
 
-    margin:50px;
 
     background-color:var(--color-tertiary);
 
@@ -14,16 +13,31 @@
     li{
         list-style-type: none;
         /*padding:0 10px;*/
+
     }
 
     ul{
         display:flex;
-        gap:10px;
+        gap:20px;
     }
 
-    .wrapper{
+
+    .wrapperFooter{
         display:flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
+
+        max-width: $breakpoint-xml   ;
+        width: calc(100% - var(--spacing-md));
+        margin: 0 auto;
+
+
+        img{
+            border-radius: 20px;
+
+
+        }
+
+
     }
 }
